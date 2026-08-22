@@ -1,0 +1,16 @@
+<Page
+    x:Class="YJWebcam.Desktop.Views.PairingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Padding="24" Spacing="24" HorizontalAlignment="Center">
+        <TextBlock Text="Pair New Android Phone" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock Text="Scan this QR code with the YJ Webcam Android App" Foreground="Gray" HorizontalAlignment="Center"/>
+
+        <Border Background="White" CornerRadius="16" Padding="24" HorizontalAlignment="Center">
+            <Image x:Name="QrCodeImage" Width="240" Height="240"/>
+        </Border>
+
+        <TextBlock Text="Or connect your Android phone via USB cable with USB Debugging enabled" Foreground="Gray" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Page>

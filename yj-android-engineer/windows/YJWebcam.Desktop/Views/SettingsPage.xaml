@@ -1,0 +1,27 @@
+<Page
+    x:Class="YJWebcam.Desktop.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Padding="24" Spacing="24">
+        <TextBlock Text="Settings" FontSize="28" FontWeight="Bold"/>
+
+        <Card Padding="16">
+            <StackPanel Spacing="16">
+                <TextBlock Text="Virtual Camera Driver" FontSize="18" FontWeight="SemiBold"/>
+                <ToggleSwitch Header="Enable YJ Virtual Camera System Driver" IsOn="True"/>
+            </StackPanel>
+        </Card>
+
+        <Card Padding="16">
+            <StackPanel Spacing="16">
+                <TextBlock Text="Network Transport" FontSize="18" FontWeight="SemiBold"/>
+                <RadioButtons Header="Preferred Connection Mode">
+                    <RadioButton Content="Auto-detect (USB ADB Tunnel -> Wi-Fi WebRTC)" IsChecked="True"/>
+                    <RadioButton Content="Force USB ADB Port Forwarding"/>
+                    <RadioButton Content="Force Wi-Fi WebRTC UDP"/>
+                </RadioButtons>
+            </StackPanel>
+        </Card>
+    </StackPanel>
+</Page>

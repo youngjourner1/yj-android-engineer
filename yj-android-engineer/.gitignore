@@ -1,0 +1,53 @@
+# ==========================================
+# Android / Gradle Git Ignore
+# ==========================================
+.gradle/
+build/
+android/app/build/
+android/build/
+android/.gradle/
+*.apk
+*.aab
+
+# Local configuration file (sdk path, etc)
+local.properties
+android/local.properties
+
+# Android Studio & IntelliJ project files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.navigation/
+
+# Android Keystore files
+*.jks
+*.keystore
+
+# ==========================================
+# Windows / Visual Studio Git Ignore
+# ==========================================
+windows/.vs/
+windows/x64/
+windows/x86/
+windows/ARM64/
+windows/Debug/
+windows/Release/
+windows/bin/
+windows/obj/
+windows/YJWebcam.Desktop/bin/
+windows/YJWebcam.Desktop/obj/
+windows/YJWebcam.VirtualCamera/x64/
+windows/YJWebcam.VirtualCamera/Debug/
+windows/YJWebcam.VirtualCamera/Release/
+*.user
+*.suo
+*.userosv
+*.sln.docstates
+packages/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+Desktop.ini

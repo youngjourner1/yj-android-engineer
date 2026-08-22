@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.YJWebcam" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/yj_surface</item>
+        <item name="android:navigationBarColor">@color/yj_surface</item>
+        <item name="android:windowBackground">@color/yj_surface</item>
+    </style>
+</resources>
