@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YJWebcam.Desktop", "YJWebca
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YJWebcam.VirtualCamera", "YJWebcam.VirtualCamera\YJWebcamVirtualCam.vcxproj", "{6A714C5D-6239-44F2-8700-112233445566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YJWebcam.Desktop.Tests", "YJWebcam.Desktop.Tests\YJWebcam.Desktop.Tests.csproj", "{99887766-5544-3322-1100-AABBCCDDEEFF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -22,9 +20,5 @@ Global
 		{6A714C5D-6239-44F2-8700-112233445566}.Debug|x64.Build.0 = Debug|x64
 		{6A714C5D-6239-44F2-8700-112233445566}.Release|x64.ActiveCfg = Release|x64
 		{6A714C5D-6239-44F2-8700-112233445566}.Release|x64.Build.0 = Release|x64
-		{99887766-5544-3322-1100-AABBCCDDEEFF}.Debug|x64.ActiveCfg = Debug|x64
-		{99887766-5544-3322-1100-AABBCCDDEEFF}.Debug|x64.Build.0 = Debug|x64
-		{99887766-5544-3322-1100-AABBCCDDEEFF}.Release|x64.ActiveCfg = Release|x64
-		{99887766-5544-3322-1100-AABBCCDDEEFF}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal

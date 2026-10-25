@@ -14,6 +14,7 @@ public:
 private:
     HANDLE m_hMapFile;
     HANDLE m_hFrameEvent;
+    HANDLE m_hMutex;
     void* m_pBuffer;
     bool m_initialized;
 };

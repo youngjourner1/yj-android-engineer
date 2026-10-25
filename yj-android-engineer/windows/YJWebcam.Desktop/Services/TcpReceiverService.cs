@@ -27,12 +27,14 @@ namespace YJWebcam.Desktop.Services
 
             await Task.Run(async () =>
             {
+                int retryAttempt = 0;
                 while (_isReceiving && !_cts.Token.IsCancellationRequested)
                 {
                     try
                     {
                         _client = new TcpClient();
                         await _client.ConnectAsync(host, port);
+                        retryAttempt = 0; // Reset on successful connect
                         using var stream = _client.GetStream();
 
                         byte[] headerBuffer = new byte[32];
@@ -73,9 +75,11 @@ namespace YJWebcam.Desktop.Services
                             }
                         }
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        await Task.Delay(2000, _cts.Token);
+                        // Exponential backoff: max delay 10 seconds
+                        int retryDelay = Math.Min(10000, 2000 * (int)Math.Pow(2, Math.Min(5, retryAttempt++)));
+                        await Task.Delay(retryDelay, _cts.Token);
                     }
                 }
             }, _cts.Token);

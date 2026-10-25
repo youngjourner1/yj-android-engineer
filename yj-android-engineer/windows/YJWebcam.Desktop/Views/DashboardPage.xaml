@@ -21,7 +21,7 @@
         <Border Grid.Row="1" Background="#1E293B" CornerRadius="16" Margin="0,0,0,24">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel HorizontalAlignment="Center" Spacing="8">
-                    <FontIcon Glyph="&#xE714;" FontSize="48" Foreground="Gray"/>
+                    <SymbolIcon Symbol="Video" Foreground="Gray"/>
                     <TextBlock Text="LIVE VIDEO STREAM FEED (1080p 60FPS)" Foreground="Gray" FontSize="16"/>
                 </StackPanel>
             </Grid>

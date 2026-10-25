@@ -335,7 +335,7 @@ private fun BasicControlsContent(
 }
 
 @Composable
-private fun ControlSlider(label: String, value: Float, range: ClosedRange<Float>, onValueChange: (Float) -> Unit) {
+private fun ControlSlider(label: String, value: Float, range: ClosedFloatingPointRange<Float>, onValueChange: (Float) -> Unit) {
     Column(modifier = Modifier.padding(vertical = 4.dp)) {
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Text(label, fontSize = 14.sp, fontWeight = FontWeight.Medium)

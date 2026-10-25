@@ -96,7 +96,7 @@ class CameraXController @Inject constructor(
             data = bytes,
             width = imageProxy.width,
             height = imageProxy.height,
-            timestampUs = imageProxy.info.timestamp / 1000,
+            timestampUs = imageProxy.imageInfo.timestamp / 1000,
             sequenceNumber = ++sequenceCounter,
             isKeyframe = (sequenceCounter % 30 == 0L),
             codec = VideoCodec.H264

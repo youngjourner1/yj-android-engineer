@@ -6,14 +6,14 @@
     <StackPanel Padding="24" Spacing="24">
         <TextBlock Text="Settings" FontSize="28" FontWeight="Bold"/>
 
-        <Card Padding="16">
+        <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" CornerRadius="8" Padding="16">
             <StackPanel Spacing="16">
                 <TextBlock Text="Virtual Camera Driver" FontSize="18" FontWeight="SemiBold"/>
                 <ToggleSwitch Header="Enable YJ Virtual Camera System Driver" IsOn="True"/>
             </StackPanel>
-        </Card>
+        </Border>
 
-        <Card Padding="16">
+        <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" CornerRadius="8" Padding="16">
             <StackPanel Spacing="16">
                 <TextBlock Text="Network Transport" FontSize="18" FontWeight="SemiBold"/>
                 <RadioButtons Header="Preferred Connection Mode">
@@ -22,6 +22,6 @@
                     <RadioButton Content="Force Wi-Fi WebRTC UDP"/>
                 </RadioButtons>
             </StackPanel>
-        </Card>
+        </Border>
     </StackPanel>
 </Page>

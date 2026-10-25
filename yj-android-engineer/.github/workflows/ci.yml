@@ -47,3 +47,11 @@ jobs:
 
       - name: Build Solution (Release)
         run: msbuild windows/YJWebcam.sln /p:Configuration=Release /p:Platform="x64"
+
+      - name: Archive Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: YJWebcam-Windows-x64
+          path: |
+            windows/YJWebcam.Desktop/bin/x64/Release/net8.0-windows10.0.19041.0/
+            windows/YJWebcam.VirtualCamera/x64/Release/YJWebcamVirtualCam.dll
